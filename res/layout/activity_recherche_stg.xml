@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RechercheStgActivity">
+
+    <TextView
+        android:id="@+id/lblHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recherche d'un Stagiaires"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/chkId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblHead"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Id Stagiaire : "
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/txtRNumStg"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:hint="Tapez un id"
+        app:layout_constraintTop_toBottomOf="@id/lblHead"
+        app:layout_constraintLeft_toRightOf="@id/chkFiliere"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/chkNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chkId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Nom Stagiaire : "
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/txtRNomStg"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:hint="Tapez un nom"
+        app:layout_constraintTop_toBottomOf="@id/txtRNumStg"
+        app:layout_constraintLeft_toRightOf="@id/chkFiliere"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/chkFiliere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chkNom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Filiere Stagiaire : "
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/txtRFiliereStg"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:hint="Tapez une Filiere"
+        app:layout_constraintTop_toBottomOf="@id/txtRNomStg"
+        app:layout_constraintLeft_toRightOf="@id/chkFiliere"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btnRechercher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rechercher"
+        android:onClick="RechercheStg"
+        app:layout_constraintTop_toBottomOf="@id/txtRFiliereStg"/>
+
+    <GridView
+        android:id="@+id/grdStagiaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnRechercher">
+
+    </GridView>
+
+</android.support.constraint.ConstraintLayout>
