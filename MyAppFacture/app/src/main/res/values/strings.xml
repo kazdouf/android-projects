@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My AppFacture</string>
+    <string-array name="Categories">
+        <item>Industriel</item>
+        <item>Informatique</item>
+        <item>Menager</item>
+    </string-array>
+</resources>

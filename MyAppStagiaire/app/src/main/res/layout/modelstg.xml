@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgStagiaire"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:layout_editor_absoluteX="0dp"
+        app:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/lblNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:text="numero stagiaire"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/imgStagiaire"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/lblNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:layout_toRightOf="@id/imgStagiaire"
+        android:layout_below="@id/lblNumero"
+        android:text="nom stagiaire"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>

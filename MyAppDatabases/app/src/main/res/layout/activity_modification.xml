@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificationActivity">
+
+    <TextView
+        android:id="@+id/lblMAJHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modifier Stagiaire"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblMAJNumStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero Stagiaire : "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblMAJHead"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblMAJIdStg"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/lblMAJNumStg"
+        app:layout_constraintTop_toBottomOf="@+id/lblMAJHead" />
+
+    <TextView
+        android:id="@+id/lblMAJNomStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nom Stagiaire : "
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblMAJNumStg"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/txtMAJNomStg"
+        android:layout_height="wrap_content"
+        android:hint="taper nouveau nom"
+        android:layout_width="@android:dimen/thumbnail_width"
+        app:layout_constraintLeft_toRightOf="@+id/lblMAJNumStg"
+        app:layout_constraintTop_toBottomOf="@+id/lblMAJNumStg" />
+    <TextView
+        android:id="@+id/lblMAJFilStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Filiere : "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblMAJNomStg"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/txtMAJFilStg"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:hint="taper nouveau Filiere"
+        app:layout_constraintLeft_toRightOf="@+id/lblMAJNumStg"
+        app:layout_constraintTop_toBottomOf="@+id/lblMAJNomStg" />
+
+    <Button
+        android:id="@+id/btnMAJModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:onClick="ModifierStg"
+        android:text="modifier"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMAJFilStg" />
+
+    <Button
+        android:id="@+id/btnMAJAnnuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:onClick="SupprimerStg"
+        android:text="supprimer"
+        app:layout_constraintLeft_toRightOf="@+id/btnAjouter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMAJModifier"
+        app:layout_constraintTop_toBottomOf="@id/txtMAJFilStg" />
+
+    <TextView
+        android:id="@+id/lblMAJMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnMAJModifier"/>
+
+    <ListView
+        android:id="@+id/lstvMAJStg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lblMAJMsg">
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>

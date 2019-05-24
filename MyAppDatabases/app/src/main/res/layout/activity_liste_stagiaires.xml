@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListeStagiairesActivity">
+
+    <TextView
+        android:id="@+id/lblHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste des Stagiaires"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ListView
+        android:id="@+id/lstviewStagiaires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lblHead">
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Stagiaire"
+        android:onClick="AjoutActivity"
+        app:layout_constraintTop_toBottomOf="@id/lblHead"/>
+
+    <Button
+        android:id="@+id/btnAfficherStg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afficher Stagiaires"
+        android:onClick="AffichActivity"
+        app:layout_constraintTop_toBottomOf="@id/btnAdd"/>
+
+    <Button
+        android:id="@+id/btnRechercheActiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recherche Stagiaires"
+        android:onClick="RechercheActivity"
+        app:layout_constraintTop_toBottomOf="@id/btnAfficherStg"/>
+
+    <Button
+        android:id="@+id/btnmodificationActiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ModifierActivity"
+        android:text="modification Stagiaires"
+        app:layout_constraintTop_toBottomOf="@id/btnRechercheActiv" />
+
+</android.support.constraint.ConstraintLayout>

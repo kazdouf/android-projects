@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/iconeBoite"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@mipmap/ic_launcher"
+
+            />
+        <TextView android:id="@+id/lblTitreBoite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="boite de dialogue saisie"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/lblMsgBoite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="veuillez saisir une valeur"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+    <EditText android:id="@+id/txtSaisieBoite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="valeur par defaut"
+        android:text="un text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oui"
+            android:layout_gravity="center"
+            android:onClick="afficher"
+            />
+        <Button android:id="@+id/btn_non"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non"
+            android:layout_gravity="center"
+            android:onClick="afficher"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

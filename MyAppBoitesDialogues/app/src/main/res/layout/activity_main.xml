@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Boites de Dialogues"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="46dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btBoiteS"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:text="Boite simple"
+        android:textSize="20dp"
+        android:onClick="BoiteSimple"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHead" />
+
+    <Button
+        android:id="@+id/btBoiteMultiChoix"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:onClick="BoiteMultiplChoix"
+        android:text="Boite Multiple"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/btBoiteL"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btBoiteS"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btBoiteL"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="20dp"
+        android:text="Boite Liste"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btBoiteMultiChoix"
+        app:layout_constraintVertical_bias="0.831" />
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btBoiteL"
+        >
+
+    </ListView>-->
+
+</android.support.constraint.ConstraintLayout>

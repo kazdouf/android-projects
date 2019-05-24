@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjouterStagiaireActivity">
+
+    <TextView
+        android:id="@+id/lblHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="ajout stagiaire"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/lblNumStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num : "
+        android:layout_below="@id/lblHead"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/txtNumStg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblHead"
+        android:layout_toRightOf="@+id/lblNumStg"
+        android:hint="entrez numero"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/lblNomStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom : "
+        android:layout_below="@id/lblNumStg"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/txtNomStg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtNumStg"
+        android:layout_toRightOf="@+id/lblNomStg"
+        android:hint="entrez nom"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/lblphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo : "
+        android:layout_below="@id/lblNomStg"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/imgStg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtNomStg"
+        android:layout_toRightOf="@+id/lblNomStg"
+        android:hint="entrez nom photo"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/btnAjoutStg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:layout_below="@id/imgStg"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:background="@color/colorPrimary"
+            android:text="Ajout Produit au panier"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14pt" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Produit : "
+            android:textSize="12pt"/>
+        <TextView
+            android:id="@+id/lblidP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation : "
+            android:textSize="12pt"/>
+        <TextView
+            android:id="@+id/lblDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="entrez Designation"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PrixUnitaire H.T : "
+            android:textSize="12pt"/>
+        <TextView
+            android:id="@+id/lblPrHT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="entrez un Prix Unitaire"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categorie : "
+            android:textSize="12pt"/>
+        <Spinner
+            android:id="@+id/spnCat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Categories">
+        </Spinner>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taux TVA : "
+            android:textSize="12pt"/>
+        <TextView
+            android:id="@+id/lblTtva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="entrez Taux TVA"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TVA : "
+            android:textSize="12pt"/>
+        <TextView
+            android:id="@+id/lblTVA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="entrez TVA"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix Unitaire TTC : "
+            android:textSize="12pt"/>
+        <TextView
+            android:id="@+id/lblPrUTTC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="entrez PrixUnitaire"/>
+    </TableRow>
+
+    <TableRow>
+        <Button android:id="@+id/btnConfirm"
+            android:textSize="8pt"
+            android:text="confirmer ajout"/>
+        <Button android:id="@+id/btnAnnul"
+            android:textSize="8pt"
+            android:text="annuler"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjoutStgActivity">
+
+    <TextView
+        android:id="@+id/lblAddHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Stagiaire"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblNumStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero Stagiaire : "
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddHead"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/txtNumStg"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:hint="taper le numero"
+        app:layout_constraintLeft_toRightOf="@+id/lblNumStg"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddHead" />
+
+    <TextView
+        android:id="@+id/lblNomStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nom Stagiaire : "
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblNumStg"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/txtNomStg"
+        android:layout_height="wrap_content"
+        android:hint="taper le nom"
+        android:layout_width="@android:dimen/thumbnail_width"
+        app:layout_constraintLeft_toRightOf="@+id/lblNumStg"
+        app:layout_constraintTop_toBottomOf="@+id/lblNumStg" />
+    <TextView
+        android:id="@+id/lblFilStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Filiere : "
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblNomStg"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/txtFilStg"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:hint="taper le Filiere"
+        app:layout_constraintLeft_toRightOf="@+id/lblNumStg"
+        app:layout_constraintTop_toBottomOf="@+id/lblNomStg" />
+
+    <Button
+        android:id="@+id/btnAjouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ajouter"
+        android:onClick="AddStg"
+        app:layout_constraintTop_toBottomOf="@id/txtFilStg"
+        android:layout_marginTop="30dp"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

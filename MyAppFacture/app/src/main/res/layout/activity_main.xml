@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facture"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="20pt"
+            android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id Produit : "
+                android:textSize="12pt"/>
+            <EditText
+                android:id="@+id/txtidProd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="entrez id"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designation : "
+                android:textSize="12pt"/>
+            <EditText
+                android:id="@+id/txtDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="entrez Designation"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PrixUnitaire H.T : "
+                android:textSize="12pt"/>
+            <EditText
+                android:id="@+id/txtPrixHT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="entrez un Prix Unitaire"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categorie : "
+                android:textSize="12pt"/>
+            <Spinner
+                android:id="@+id/spnCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Categories">
+            </Spinner>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taux TVA : "
+                android:textSize="12pt"/>
+            <EditText
+                android:id="@+id/txtTtva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="entrez Taux TVA"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TVA : "
+                android:textSize="12pt"/>
+            <EditText
+                android:id="@+id/txtTVA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="entrez TVA"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prix Unitaire TTC : "
+                android:textSize="12pt"/>
+            <EditText
+                android:id="@+id/txtPrixUTTC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="entrez PrixUnitaire"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total TTC : "
+                android:textSize="12pt"/>
+            <EditText
+                android:id="@+id/txtTotalTTC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="entrez Total TTC"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thaux Remise : "
+                android:textSize="12pt"/>
+            <EditText
+                android:id="@+id/txttRemise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="entrez Thaux Remise"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remise : "
+                android:textSize="12pt"/>
+
+            <EditText
+                android:id="@+id/txtRemise"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:hint="entrez Remise" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net A paye : "
+                android:textSize="12pt"/>
+            <TextView
+                android:id="@+id/lblNetApaye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"/>
+        </TableRow>
+    <TableRow>
+        <Button android:id="@+id/btnCalculer"
+            android:textSize="8pt"
+            android:text="Calculer"/>
+
+        <Button
+            android:id="@+id/btnCatalog"
+            android:layout_width="146dp"
+            android:text="Afficher catalog"
+            android:textSize="8pt" />
+    </TableRow>
+    </TableLayout>
