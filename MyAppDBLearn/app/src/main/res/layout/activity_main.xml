@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myappdblearn.MainActivity">
+
+    <TextView
+        android:id="@+id/lblHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="data bases"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdmins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admins"
+        android:onClick="AdminsAct"
+        app:layout_constraintTop_toBottomOf="@+id/lblHead"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnPrds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products"
+        android:onClick="ProdsAct"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdmins"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
